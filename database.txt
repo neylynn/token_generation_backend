@@ -1,0 +1,12 @@
+create database `token-generation`;
+
+use `token-generation`;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(20) NOT NULL,
+  company_name VARCHAR(255) NOT NULL,
+  designation VARCHAR(255) NOT NULL,
+  token VARCHAR(6) NOT NULL
+);
